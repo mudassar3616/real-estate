@@ -1,93 +1,111 @@
+
+/* =====================================
+   GLOBAL CSS
+===================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
 }
+
 :root {
     --outer-bg-1: rgb(230, 239, 255);
     --outer-bg-2: rgb(247, 247, 255);
-
     --white: rgb(255, 255, 255);
-
     --primary-purple: rgb(36, 28, 108);
     --dark-purple: rgb(20, 17, 54);
     --accent-purple: rgb(111, 66, 232);
-
     --text-dark: rgb(20, 17, 54);
     --text-gray: rgb(100, 100, 115);
-
     --border-color: rgb(228, 228, 236);
 }
 
 
-/* =========================
-   FULL PAGE OUTER BACKGROUND
-========================= */
+/* =====================================
+   BODY
+===================================== */
 
 html {
     min-height: 100%;
-    margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Lexend', sans-serif;
     margin: 0;
-    /* min-height: 100vh; */
     background: var(--outer-bg-1);
+    font-family: 'Lexend', sans-serif;
 }
 
 
-/* =========================
-   MAIN WEBSITE WRAPPER
-========================= */
+/* =====================================
+   FULL PAGE
+===================================== */
 
 #full-page {
-    min-height: auto;
-   padding-left: 20px;
-   padding-right: 20px;
+    min-height: calc(100vh - 40px);
+
+    padding: 0 20px 20px;
     margin: 20px;
+
     background: var(--white);
     border-radius: 25px;
 }
 
 
-.header{
-    padding: 20px 10px 15px 10px;
+/* =====================================
+   HEADER
+===================================== */
+
+.header {
+    width: 100%;
+    padding: 20px 10px 15px;
     display: flex;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
+    gap: 20px;
 }
-.nestoria-logo{
+
+.logo-main {
+    display: flex;
+    align-items: center;
+}
+
+.nestoria-logo {
     width: 10rem;
     height: 3rem;
+    object-fit: contain;
+}
 
-}
-.nav-bar,li
-,a {
-    
-display: flex;
-    gap: 20px;
-    text-decoration: none;
-    font-size: 1rem;
-    list-style: none;
-    color: black;
-}
-.header-right-side{
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.nav-bar {
     display: flex;
+    align-items: center;
     gap: 20px;
+    list-style: none;
 }
+
+.nav-bar li {
+    list-style: none;
+}
+
 .nav-bar li a {
     position: relative;
+    display: inline-block;
     text-decoration: none;
-    color: rgb(20, 17, 54);
+    color: var(--dark-purple);
     font-size: 15px;
     font-weight: 500;
     padding-bottom: 8px;
-    
-    
 }
 
+
+/* Navigation Hover */
 
 .nav-bar li a::after {
     content: "";
@@ -96,7 +114,7 @@ display: flex;
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: rgb(111, 66, 232);
+    background: var(--accent-purple);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.35s ease;
@@ -105,28 +123,42 @@ display: flex;
 .nav-bar li a:hover::after {
     transform: scaleX(1);
 }
-.favorite-icon{
-    width: 40px;
-  height: 40px;
-  border-radius: 50%;          
-  border: none;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  color: #1f2937;
-    
+
+
+/* =====================================
+   HEADER RIGHT SIDE
+===================================== */
+
+.header-right-side {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
+
+.favorite-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--white);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    color: var(--dark-purple);
+}
+
+
+/* Get Started Button */
 
 .get-started {
     position: relative;
     overflow: hidden;
     isolation: isolate;
     background: transparent;
-    color: rgb(36, 28, 108);
-    border: 1.2px solid rgb(36, 28, 108);
+    color: var(--primary-purple);
+    border: 1.2px solid var(--primary-purple);
     border-radius: 10px;
     padding: 14px 30px;
     font-size: 14px;
@@ -135,100 +167,249 @@ display: flex;
     transition: color 0.4s ease;
 }
 
-/* Background Animation */
 .get-started::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: var(--primary-purple);
+
+    transform: scaleX(0);
+    transform-origin: left;
+
+    transition: transform 0.4s ease;
+
+    z-index: -1;
+}
+
+.get-started:hover::before {
+    transform: scaleX(1);
+}
+
+.get-started:hover {
+    color: var(--white);
+}
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero-section {
+  
+
+    width: 100%;
+    min-height: 680px;
+    position: relative;
+    background-image:
+        linear-gradient(
+            rgba(227, 224, 224, 0.20),
+            rgba(110, 134, 222, 0.20)
+        ),
+        url("/Images/Luxury%20Coastal%20Villa%20at%20Sunset.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    overflow: hidden;
+}
+
+
+/* =====================================
+   HERO LEFT CONTENT
+===================================== */
+
+.left {
+    display: grid;
+    gap: 30px;
+
+    align-content: start;
+}
+
+
+/* =====================================
+   ICON LIST NAME
+===================================== */
+
+.icon-list-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px 20px 10px 10px;
+    color: var(--accent-purple);
+    font-size: 15px;
+}
+
+.icon-list-name svg {
+    color: var(--accent-purple);
+    width: 2rem;
+    height: 20px;
+}
+
+
+/* =====================================
+   HERO HEADING
+===================================== */
+
+.left h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--dark-purple);
+}
+
+
+/* Gradient Home Text */
+
+.left h1 span {
+    position: relative;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    background: linear-gradient(
+        90deg,
+        #3b6ef5 0%,
+        #6d5dfc 55%,
+        #9a6bf5 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* Curved Underline */
+
+.left h1 span::after {
+    content: "";
+    position: absolute;
+    left: 4%;
+    right: 4%;
+    bottom: -10px;
+    height: 14px;
+    border-top: 3.5px solid #6c63f5;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    pointer-events: none;
+}
+
+
+/* Hero Description */
+
+.left p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--dark-purple);
+}
+
+
+/* =====================================
+   HERO FOOTER / SEARCH BAR
+===================================== */
+
+.hero-footer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 0;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px 20px 10px 10px;
+    color: var(--accent-purple);
+    font-size: 15px;
+    border: 1px solid #060267;
+}
+
+/* =====================================
+   LOCATION
+===================================== */
+
+.location,
+.property-type,
+.price {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border-right: 1px solid var(--border-color);
+}
+
+
+.hero-footer p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: var(--dark-purple);
+    white-space: nowrap;
+}
+
+
+.hero-footer svg{
+   
+  width: 45px !important;
+    height: 45px !important;
+    min-width: 45px;
+    padding: 12px !important;
+    display: block;
+    color: #060267 !important;
+    background: #f2efff !important;
+    border-radius: 50% !important;
+    flex-shrink: 0;
+
+}
+
+.Search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+     position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: transparent;
+    color: var(--primary-purple);
+    border: 1.2px solid var(--primary-purple);
+    border-radius: 50px;
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.Search::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgb(36, 28, 108);
+    background: var(--primary-purple);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease;
     z-index: -1;
 }
 
-/* Hover Effect */
-.get-started:hover::before {
+.Search:hover::before {
     transform: scaleX(1);
 }
-.get-started:hover {
-    color: rgb(255, 255, 255);
-}
 
-.hero-section {
-    background-image:
-        linear-gradient(rgba(227, 224, 224, 0.35), rgba(110, 134, 222, 0.35)),
-        url("/Images/Luxury\ Coastal\ Villa\ at\ Sunset.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 25px;
-    min-height: 100vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding: 50px;
-}
-.icon-list-name{
-    display: flex;
-    gap:20px;
-    background: rgba(255, 255, 255, 0.45);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 50px;
-    padding: 10px;
-    padding-left: 10px;
-    padding-right: 20px;
-    color: var(--accent-purple);
-    font-size: 18px;
-    align-items: center;
-    width: fit-content;
-}
-.icon-list-name svg{
-    color:var(--accent-purple);
-  width: 2rem;
-  height: 20px;
-}
-.left{
-    /* margin-top: -300px; */
-    display: grid;
-    gap: 30px;
-    
-}
-.left h1{
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 70px;
-    color: rgb(0, 0, 0);
-
-}
-h1 span {
-  position: relative;
-  display: inline-block;
-  font-size: 3.5rem; /* Adjust size as needed */
-  font-weight: 600;
-  line-height: 1.1;
-
-  /* Blue-to-purple gradient text */
-  background: linear-gradient(90deg, #3b6ef5 0%, #6d5dfc 55%, #9a6bf5 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-/* Curved underline beneath "Home" */
-h1 span::after {
-  content: "";
-  position: absolute;
-  left: 4%;
-  right: 4%;
-  bottom: -10px;
-  height: 14px;
-  border-top: 3.5px solid #6c63f5;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  pointer-events: none;
-}
-.left p{
-    font-size: 20px;
+.Search:hover {
+    color: var(--white);
 }
