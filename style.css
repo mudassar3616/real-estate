@@ -2,60 +2,233 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
 }
-
 :root {
-  /* ===== MAIN / BRAND COLORS ===== */
-  --primary-dark:   rgb(32, 26, 84);    /* #201A54 - headings, Get Started / Learn More / View Details buttons */
-  --primary-violet: rgb(124, 92, 246);  /* #7C5CF6 - "Home" accent text, icons, active nav, checkmark circles */
-  --purple-medium:  rgb(124, 111, 232); /* #7C6FE8 - WHY CHOOSE NESTORIA / HOW IT WORKS labels, 01 02 03 numbers */
-  --purple-light:   rgb(147, 112, 246); /* #9370F6 - gradient end / hover state */
+    --outer-bg-1: rgb(230, 239, 255);
+    --outer-bg-2: rgb(247, 247, 255);
 
-  /* ===== BACKGROUNDS ===== */
-  --page-bg:       rgb(243, 241, 250);  /* #F3F1FA - full page background (light lavender) */
-  --white:         rgb(255, 255, 255);  /* #FFFFFF - navbar, cards, search bar */
-  --lavender-pill: rgb(237, 233, 254);  /* #EDE9FE - Dream • Search • Own badge */
-  --card-lavender: rgb(241, 238, 251);  /* #F1EEFB - Verified Properties card */
-  --card-pink-lav: rgb(246, 238, 251);  /* #F6EEFB - Safe & Secure card */
-  --card-blue-lav: rgb(238, 240, 252);  /* #EEF0FC - 24/7 Support card */
-  --card-pink:     rgb(251, 238, 246);  /* #FBEEF6 - Best Price Guarantee card */
+    --white: rgb(255, 255, 255);
 
-  /* ===== TEXT COLORS ===== */
-  --text-dark:  rgb(32, 26, 84);        /* #201A54 - all headings */
-  --text-gray:  rgb(107, 114, 128);     /* #6B7280 - paragraphs, locations, meta text */
-  --text-muted: rgb(156, 163, 175);     /* #9CA3AF - small labels (Location, Property Type, /month) */
-  --nav-link:   rgb(63, 61, 86);        /* #3F3D56 - navbar links */
+    --primary-purple: rgb(36, 28, 108);
+    --dark-purple: rgb(20, 17, 54);
+    --accent-purple: rgb(111, 66, 232);
 
-  /* ===== ICONS / EXTRAS ===== */
-  --icon-blue: rgb(91, 108, 240);       /* #5B6CF0 - headphones icon */
-  --icon-pink: rgb(236, 72, 153);       /* #EC4899 - sparkle icon */
-  --star-gold: rgb(245, 158, 11);       /* #F59E0B - review stars ★★★★★ */
+    --text-dark: rgb(20, 17, 54);
+    --text-gray: rgb(100, 100, 115);
 
-  /* ===== PROPERTY BADGES ===== */
-  --badge-featured-bg:   rgb(243, 209, 250); /* #F3D1FA - Featured badge */
-  --badge-featured-text: rgb(107, 33, 168);  /* #6B21A8 */
-  --badge-new-bg:        rgb(134, 239, 172); /* #86EFAC - New badge */
-  --badge-new-text:      rgb(22, 101, 52);   /* #166534 */
-  --badge-hot-bg:        rgb(249, 168, 212); /* #F9A8D4 - Hot Deal badge */
-  --badge-hot-text:      rgb(157, 23, 77);   /* #9D174D */
-
-  /* ===== BORDERS / SHADOWS ===== */
-  --border-light: rgb(233, 230, 244);   /* #E9E6F4 - card borders, dividers */
-  --shadow-color: rgba(32, 26, 84, 0.08); /* soft card shadow */
-}
-
-/* ===== GRADIENTS (jo page pe use hue hain) ===== */
-.search-btn {
-  background: linear-gradient(90deg, rgb(109, 74, 232), rgb(139, 92, 246));  /* #6D4AE8 → #8B5CF6 */
-}
-.cta-banner {
-  background: linear-gradient(90deg, rgb(42, 33, 112), rgb(124, 92, 224));   /* #2A2170 → #7C5CE0 (bottom banner) */
-}
-.step-icon {
-  background: linear-gradient(135deg, rgb(106, 90, 224), rgb(143, 123, 255)); /* #6A5AE0 → #8F7BFF (01/02/03 circles) */
+    --border-color: rgb(228, 228, 236);
 }
 
 
-.full-page{
-    background-color: white;
+/* =========================
+   FULL PAGE OUTER BACKGROUND
+========================= */
+
+html {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    /* min-height: 100vh; */
+    background: var(--outer-bg-1);
+}
+
+
+/* =========================
+   MAIN WEBSITE WRAPPER
+========================= */
+
+#full-page {
+    min-height: auto;
+   padding-left: 20px;
+   padding-right: 20px;
+    margin: 20px;
+    background: var(--white);
+    border-radius: 25px;
+}
+
+
+.header{
+    padding: 20px 10px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.nestoria-logo{
+    width: 10rem;
+    height: 3rem;
+
+}
+.nav-bar,li
+,a {
+    
+display: flex;
+    gap: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    list-style: none;
+    color: black;
+}
+.header-right-side{
+    display: flex;
+    gap: 20px;
+}
+.nav-bar li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(20, 17, 54);
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    
+    
+}
+
+
+.nav-bar li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(111, 66, 232);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.nav-bar li a:hover::after {
+    transform: scaleX(1);
+}
+.favorite-icon{
+    width: 40px;
+  height: 40px;
+  border-radius: 50%;          
+  border: none;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1f2937;
+    
+}
+
+.get-started {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background: transparent;
+    color: rgb(36, 28, 108);
+    border: 1.2px solid rgb(36, 28, 108);
+    border-radius: 10px;
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+/* Background Animation */
+.get-started::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(36, 28, 108);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+/* Hover Effect */
+.get-started:hover::before {
+    transform: scaleX(1);
+}
+.get-started:hover {
+    color: rgb(255, 255, 255);
+}
+
+.hero-section {
+    background-image:
+        linear-gradient(rgba(227, 224, 224, 0.35), rgba(110, 134, 222, 0.35)),
+        url("/Images/Luxury\ Coastal\ Villa\ at\ Sunset.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 50px;
+}
+.icon-list-name{
+    display: flex;
+    gap:20px;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: var(--accent-purple);
+    font-size: 18px;
+    align-items: center;
+    width: fit-content;
+}
+.icon-list-name svg{
+    color:var(--accent-purple);
+  width: 2rem;
+  height: 20px;
+}
+.left{
+    /* margin-top: -300px; */
+    display: grid;
+    gap: 30px;
+    
+}
+.left h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 70px;
+    color: rgb(0, 0, 0);
+
+}
+h1 span {
+  position: relative;
+  display: inline-block;
+  font-size: 3.5rem; /* Adjust size as needed */
+  font-weight: 600;
+  line-height: 1.1;
+
+  /* Blue-to-purple gradient text */
+  background: linear-gradient(90deg, #3b6ef5 0%, #6d5dfc 55%, #9a6bf5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Curved underline beneath "Home" */
+h1 span::after {
+  content: "";
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  bottom: -10px;
+  height: 14px;
+  border-top: 3.5px solid #6c63f5;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  pointer-events: none;
+}
+.left p{
+    font-size: 20px;
 }
