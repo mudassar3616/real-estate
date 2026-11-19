@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  /* ===== MAIN / BRAND COLORS ===== */
+  --primary-dark:   rgb(32, 26, 84);    /* #201A54 - headings, Get Started / Learn More / View Details buttons */
+  --primary-violet: rgb(124, 92, 246);  /* #7C5CF6 - "Home" accent text, icons, active nav, checkmark circles */
+  --purple-medium:  rgb(124, 111, 232); /* #7C6FE8 - WHY CHOOSE NESTORIA / HOW IT WORKS labels, 01 02 03 numbers */
+  --purple-light:   rgb(147, 112, 246); /* #9370F6 - gradient end / hover state */
+
+  /* ===== BACKGROUNDS ===== */
+  --page-bg:       rgb(243, 241, 250);  /* #F3F1FA - full page background (light lavender) */
+  --white:         rgb(255, 255, 255);  /* #FFFFFF - navbar, cards, search bar */
+  --lavender-pill: rgb(237, 233, 254);  /* #EDE9FE - Dream • Search • Own badge */
+  --card-lavender: rgb(241, 238, 251);  /* #F1EEFB - Verified Properties card */
+  --card-pink-lav: rgb(246, 238, 251);  /* #F6EEFB - Safe & Secure card */
+  --card-blue-lav: rgb(238, 240, 252);  /* #EEF0FC - 24/7 Support card */
+  --card-pink:     rgb(251, 238, 246);  /* #FBEEF6 - Best Price Guarantee card */
+
+  /* ===== TEXT COLORS ===== */
+  --text-dark:  rgb(32, 26, 84);        /* #201A54 - all headings */
+  --text-gray:  rgb(107, 114, 128);     /* #6B7280 - paragraphs, locations, meta text */
+  --text-muted: rgb(156, 163, 175);     /* #9CA3AF - small labels (Location, Property Type, /month) */
+  --nav-link:   rgb(63, 61, 86);        /* #3F3D56 - navbar links */
+
+  /* ===== ICONS / EXTRAS ===== */
+  --icon-blue: rgb(91, 108, 240);       /* #5B6CF0 - headphones icon */
+  --icon-pink: rgb(236, 72, 153);       /* #EC4899 - sparkle icon */
+  --star-gold: rgb(245, 158, 11);       /* #F59E0B - review stars ★★★★★ */
+
+  /* ===== PROPERTY BADGES ===== */
+  --badge-featured-bg:   rgb(243, 209, 250); /* #F3D1FA - Featured badge */
+  --badge-featured-text: rgb(107, 33, 168);  /* #6B21A8 */
+  --badge-new-bg:        rgb(134, 239, 172); /* #86EFAC - New badge */
+  --badge-new-text:      rgb(22, 101, 52);   /* #166534 */
+  --badge-hot-bg:        rgb(249, 168, 212); /* #F9A8D4 - Hot Deal badge */
+  --badge-hot-text:      rgb(157, 23, 77);   /* #9D174D */
+
+  /* ===== BORDERS / SHADOWS ===== */
+  --border-light: rgb(233, 230, 244);   /* #E9E6F4 - card borders, dividers */
+  --shadow-color: rgba(32, 26, 84, 0.08); /* soft card shadow */
+}
+
+/* ===== GRADIENTS (jo page pe use hue hain) ===== */
+.search-btn {
+  background: linear-gradient(90deg, rgb(109, 74, 232), rgb(139, 92, 246));  /* #6D4AE8 → #8B5CF6 */
+}
+.cta-banner {
+  background: linear-gradient(90deg, rgb(42, 33, 112), rgb(124, 92, 224));   /* #2A2170 → #7C5CE0 (bottom banner) */
+}
+.step-icon {
+  background: linear-gradient(135deg, rgb(106, 90, 224), rgb(143, 123, 255)); /* #6A5AE0 → #8F7BFF (01/02/03 circles) */
+}
+
+
+.full-page{
+    background-color: white;
+}
