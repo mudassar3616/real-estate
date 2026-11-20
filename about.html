@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Nestoria</title>
-    
-    <link rel="stylesheet" href="/about.css">
-    
+    <title>About Us - Nestoria | Real Estate</title>
+    <meta name="description" content="Learn how Nestoria helps families find verified homes with honesty, care and quality.">
+
+    <!-- Stylesheets: keep this order -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="about.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 <div id="full-page">
 
-    <!-- HEADER (Same as Home) -->
+    <!-- ================= HEADER ================= -->
     <header class="header">
         <div class="logo-main">
             <a href="index.html">
-                <img class="nestoria-logo" src="/Images/logo.png" alt="Nestoria Logo">
+                <img class="nestoria-logo" src="Images/logo.png" alt="Nestoria Logo">
             </a>
         </div>
+
         <ul class="nav-bar">
             <li><a href="index.html">Home</a></li>
-            <li><a href="listings.html">Listings</a></li>
+            <li><a href="index.html#listings">Listings</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="index.html#favorites">Favorites</a></li>
             <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html" style="color: var(--accent-purple);">About</a></li>
+            <li><a href="about.html" class="active">About</a></li>
         </ul>
+
         <div class="header-right-side">
             <span class="favorite-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -37,83 +46,174 @@
                     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3"/>
                 </svg>
             </span>
-            <button class="get-started">Get Started</button>
+            <a href="index.html#listings" class="get-started get-started-link">Get Started</a>
         </div>
     </header>
 
-    <!-- ABOUT HERO SECTION -->
-    <section class="about-hero">
-        <div class="about-hero-content">
-            <span class="why-label">WHO WE ARE</span>
-            <h1>Redefining The Way<br>You Find <span>Home</span></h1>
-            <p>We are more than just a real estate platform. We are your partners in finding a space where memories are made, and futures are built.</p>
-        </div>
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-banner">
+        <div class="banner-glow"></div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span>About Us</span>
+        </nav>
+        <span class="banner-label">ABOUT NESTORIA</span>
+        <h1>We Help Families Find Homes They Love</h1>
+        <p>Nestoria is a real estate platform built on honesty, care and verified quality. We make every step of your search clear, fair and calm.</p>
     </section>
 
-    <!-- OUR STORY SECTION -->
-    <section class="our-story-section">
-        <div class="story-image">
-            <img src="/Images/0583e6a2f7bc4d0a829714ee4430fbf9.png" alt="Nestoria Office">
-        </div>
-        <div class="story-content">
+    <!-- ================= OUR STORY ================= -->
+    <section class="story">
+        <div class="story-text">
             <span class="why-label">OUR STORY</span>
-            <h2>Building Trust Since 2015</h2>
-            <p>Nestoria was founded with a simple vision: to make the process of finding a home transparent, seamless, and enjoyable. We understand that a property is not just a transaction; it's a life-changing decision.</p>
-            <p>Over the years, we have helped thousands of families and individuals find their perfect spaces. Our team of expert agents works tirelessly to ensure that every listing is verified, every deal is secure, and every client feels at home.</p>
-            
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>10K+</h3>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="stat-item">
-                    <h3>5K+</h3>
-                    <p>Properties Listed</p>
-                </div>
-                <div class="stat-item">
-                    <h3>15+</h3>
-                    <p>Awards Won</p>
-                </div>
+            <h2>Built on One Simple Idea: Every Family Deserves a Home They Trust</h2>
+            <p>Nestoria started with a simple belief. Finding a home should feel clear, honest and calm. Too many people faced confusing listings, hidden fees and slow replies. We set out to change that.</p>
+            <p>Today, Nestoria connects renters and buyers with verified properties across the United States. Our team checks every listing, answers every question and stays with you until you move in.</p>
+        </div>
+
+        <div class="story-card">
+            <div class="story-quote">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Our goal is simple. Every client should leave with a home that fits their life, their budget and their trust.</p>
+                <span class="quote-author">Nestoria Founding Team</span>
             </div>
         </div>
     </section>
 
-    <!-- MEET THE TEAM SECTION -->
-    <section class="team-section">
+    <!-- ================= STATS ================= -->
+    <section class="stats">
+        <article class="stat-item">
+            <span class="stat-icon"><i class="fa-solid fa-house-chimney-user"></i></span>
+            <strong>25K+</strong>
+            <p>Happy families</p>
+        </article>
+        <article class="stat-item">
+            <span class="stat-icon"><i class="fa-solid fa-building"></i></span>
+            <strong>12K+</strong>
+            <p>Verified listings</p>
+        </article>
+        <article class="stat-item">
+            <span class="stat-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <strong>40+</strong>
+            <p>Cities covered</p>
+        </article>
+        <article class="stat-item">
+            <span class="stat-icon"><i class="fa-solid fa-star"></i></span>
+            <strong>4.9/5</strong>
+            <p>Average client rating</p>
+        </article>
+    </section>
+
+    <!-- ================= MISSION & VISION ================= -->
+    <section class="mission">
+        <article class="mission-card">
+            <span class="mission-icon"><i class="fa-solid fa-bullseye"></i></span>
+            <h3>Our Mission</h3>
+            <p>To make finding a home simple, safe and fair for everyone, from first search to final key.</p>
+        </article>
+        <article class="mission-card">
+            <span class="mission-icon mission-icon-alt"><i class="fa-solid fa-eye"></i></span>
+            <h3>Our Vision</h3>
+            <p>A future where every search for a home ends with confidence, not stress.</p>
+        </article>
+    </section>
+
+    <!-- ================= VALUES ================= -->
+    <section class="values">
         <div class="section-heading">
-            <span class="section-label">OUR EXPERTS</span>
-            <h2>Meet The Team</h2>
+            <span class="section-label">WHAT WE STAND FOR</span>
+            <h2>Our Core Values</h2>
         </div>
-        
-        <div class="team-grid">
-            <!-- Team Member 1 -->
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="/Images/testimonial2.png" alt="John Doe">
+
+        <div class="values-grid">
+            <article class="value-card">
+                <span class="value-icon"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                <h3>Honesty</h3>
+                <p>We show accurate prices, photos and details. No surprises, no hidden costs.</p>
+            </article>
+            <article class="value-card">
+                <span class="value-icon"><i class="fa-solid fa-user-group"></i></span>
+                <h3>Care</h3>
+                <p>We listen first, then recommend. Your needs come before our targets.</p>
+            </article>
+            <article class="value-card">
+                <span class="value-icon"><i class="fa-solid fa-medal"></i></span>
+                <h3>Quality</h3>
+                <p>Every listing passes our verification check before it goes live on Nestoria.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- ================= WHY TRUST US ================= -->
+    <section class="why-trust">
+        <div class="why-trust-text">
+            <span class="why-label">WHY CLIENTS TRUST US</span>
+            <h2>Clear Steps. Verified Homes. Real Support.</h2>
+            <p class="why-description">We keep the process transparent from the first visit to your move in day. Here is what you can expect from us.</p>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>Every property is verified by our team</p>
                 </div>
-                <h3>John Doe</h3>
-                <p>Founder & CEO</p>
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>No hidden fees or surprise charges</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>Support available 24/7 by phone, chat and email</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>Flexible rent terms and clear agreements</p>
+                </div>
             </div>
-            <!-- Team Member 2 -->
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="/1213.png" alt="Sarah Johnson">
+        </div>
+
+        <div class="why-trust-panel">
+            <div class="panel-row">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <strong>Secure transactions</strong>
+                    <span>Your payments and personal data stay protected.</span>
                 </div>
-                <h3>Sarah Johnson</h3>
-                <p>Head of Sales</p>
             </div>
-            <!-- Team Member 3 -->
-            <div class="team-card">
-                <div class="team-img">
-                    <img src="/Images/image.png" alt="Emily Carter">
+            <div class="panel-row">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <div>
+                    <strong>Verified listings</strong>
+                    <span>Each home is checked before it appears on our site.</span>
                 </div>
-                <h3>Emily Carter</h3>
-                <p>Senior Property Agent</p>
+            </div>
+            <div class="panel-row">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                    <strong>Human support</strong>
+                    <span>Real advisors answer your questions, any time.</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER (Same as Home) -->
+    <!-- ================= CTA BANNER ================= -->
+    <section class="cta-banner">
+        <div class="cta-icon">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="cta-content">
+            <h2>Ready to Find Your Dream Home?</h2>
+            <p>Join thousands of happy families who found their perfect space with Nestoria.</p>
+        </div>
+        <div class="cta-button-wrapper">
+            <a href="index.html#listings" class="get-started-btn">
+                Get Started <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-col brand-col">
@@ -125,6 +225,7 @@
                     <span>Nestoria</span>
                 </a>
                 <p class="footer-desc">Discover spaces that feel like home. We connect you with premium properties tailored to your lifestyle and budget.</p>
+
                 <div class="newsletter">
                     <p>Subscribe for new listings</p>
                     <form class="newsletter-form" onsubmit="event.preventDefault();">
@@ -133,43 +234,60 @@
                     </form>
                 </div>
             </div>
+
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="listings.html">Property Listings</a></li>
+                    <li><a href="index.html#listings">Property Listings</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="blog.html">Blog & News</a></li>
+                    <li><a href="blog.html">Blog &amp; News</a></li>
                 </ul>
             </div>
+
             <div class="footer-col">
                 <h4>Support</h4>
                 <ul>
                     <li><a href="#">Help Center / FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
                 </ul>
             </div>
+
             <div class="footer-col">
                 <h4>Contact Us</h4>
                 <ul class="contact-info">
-                    <li><span>📍</span> 123 Real Estate Blvd,<br>New York, NY 10001</li>
-                    <li><span>📞</span> +1 (555) 123-4567</li>
-                    <li><span>✉️</span> hello@nestoria.com</li>
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        123 Real Estate Blvd,<br>New York, NY 10001
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        +1 (555) 123-4567
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        hello@nestoria.com
+                    </li>
                 </ul>
+
                 <div class="social-links">
-                    <a href="#">FB</a>
-                    <a href="#">IG</a>
-                    <a href="#">X</a>
-                    <a href="#">IN</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
                 </div>
             </div>
         </div>
+
         <div class="footer-bottom">
-            <p>&copy; 2024 Nestoria. All rights reserved.</p>
-            <p>Made with ♥ for your dream home.</p>
+            <p>&copy; 2026 Nestoria. All rights reserved.</p>
+            <p>Made with &hearts; for your dream home.</p>
         </div>
+
         <div class="footer-branding-wrapper">
             <h6 class="footer-branding">NESTORIA</h6>
         </div>
