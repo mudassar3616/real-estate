@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-Estate</title>
+    <title>Nestoria - Real Estate</title>
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
-
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome & Iconify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
 </head>
 <body>
 <div id="full-page">
 
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
     <header class="header">
-
         <div class="logo-main">
-          <a href="home">  <img class="nestoria-logo"
-                 src="/Images/logo.png"
-                 alt="Nestoria Logo"></a>
+            <a href="#home">
+                <img class="nestoria-logo" src="/Images/logo.png" alt="Nestoria Logo">
+            </a>
         </div>
 
         <ul class="nav-bar">
@@ -35,838 +38,472 @@
         </ul>
 
         <div class="header-right-side">
-
             <span class="favorite-icon">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                     width="24" height="24"
-                     viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"/>
-                    <path fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3"/>
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.99.99 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3"/>
                 </svg>
             </span>
-
-            <button class="get-started">
-                Get Started
-            </button>
-
+            <button class="get-started">Get Started</button>
         </div>
-
     </header>
 
+    <!-- ================= HERO SECTION ================= -->
     <div class="hero-section">
         <div class="left">
-            <div class="icon-list-name"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-		<path d="M21 19v-6.733a4 4 0 0 0-1.245-2.9L13.378 3.31a2 2 0 0 0-2.755 0L4.245 9.367A4 4 0 0 0 3 12.267V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2" />
-		<path d="M9 15a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6H9z" />
-	</g>
-</svg>
-<p>.Dream</p>
-<p>.Search</p>
-<p>.Own</p>
-</div>
-            <h1>Discover Spaces <br> That Feel Like <span> Home</span></h1>
-            <p>Find handpicked properties for rent or <br> sale that match your lifestyle and budget.
-</p>
-
+            <div class="icon-list-name">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        <path d="M21 19v-6.733a4 4 0 0 0-1.245-2.9L13.378 3.31a2 2 0 0 0-2.755 0L4.245 9.367A4 4 0 0 0 3 12.267V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2" />
+                        <path d="M9 15a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6H9z" />
+                    </g>
+                </svg>
+                <p>.Dream</p>
+                <p>.Search</p>
+                <p>.Own</p>
+            </div>
+            <h1>Discover Spaces <br> That Feel Like <span>Home</span></h1>
+            <p>Find handpicked properties for rent or <br> sale that match your lifestyle and budget.</p>
         </div>
-
 
         <div class="hero-footer"> 
             <div class="location"> 
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
-	<path d="M0 0h48v48H0z" fill="none" />
-	<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 4.5A14.82 14.82 0 0 0 9.18 19.32v1.08c.6 8.12 7.34 14.65 14.82 23.1c7.81-8.82 14.82-15.5 14.82-24.18A14.82 14.82 0 0 0 24 4.5m0 7.7a7.13 7.13 0 1 1-7.13 7.12A7.13 7.13 0 0 1 24 12.2" />
-</svg>
-<p class="location-text"> Location <br> New York, USA</p>
+                    <path d="M0 0h48v48H0z" fill="none" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 4.5A14.82 14.82 0 0 0 9.18 19.32v1.08c.6 8.12 7.34 14.65 14.82 23.1c7.81-8.82 14.82-15.5 14.82-24.18A14.82 14.82 0 0 0 24 4.5m0 7.7a7.13 7.13 0 1 1-7.13 7.12A7.13 7.13 0 0 1 24 12.2" />
+                </svg>
+                <p class="location-text">Location <br> New York, USA</p>
             </div>
 
             <div class="property-type">
-<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
-	<path d="M0 0h1024v1024H0z" fill="none" />
-	<path fill="currentColor" d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2M568 868H456V664h112zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7l23.1 23.1L882 542.3z" />
-</svg>
-<p>Property <br> 
-Any Type</p>
-
-
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+                    <path d="M0 0h1024v1024H0z" fill="none" />
+                    <path fill="currentColor" d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2M568 868H456V664h112zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7l23.1 23.1L882 542.3z" />
+                </svg>
+                <p>Property <br> Any Type</p>
             </div>
 
-            <div class=" price"> 
-<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="currentColor" d="M8 15.5H6c0 2.59 2.42 4.12 5 4.44V22h2v-2.07c2.25-.3 5-1.59 5-4.43s-2.75-4.13-5-4.43V6.1c1.33.24 3 .94 3 2.4h2c0-2.84-2.75-4.13-5-4.43V2h-2v2.07c-2.25.3-5 1.59-5 4.43s2.67 4.11 5 4.43v4.97c-1.45-.25-3-1.02-3-2.4m8 0c0 1.46-1.67 2.16-3 2.4v-4.8c1.33.24 3 .94 3 2.4m-8-7c0-1.46 1.67-2.16 3-2.4v4.8c-1.37-.25-3-1-3-2.4" />
-</svg>
-<p>Price Range <br>
-$1,000 - $5,000</p>
+            <div class="price"> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor" d="M8 15.5H6c0 2.59 2.42 4.12 5 4.44V22h2v-2.07c2.25-.3 5-1.59 5-4.43s-2.75-4.13-5-4.43V6.1c1.33.24 3 .94 3 2.4h2c0-2.84-2.75-4.13-5-4.43V2h-2v2.07c-2.25.3-5 1.59-5 4.43s2.67 4.11 5 4.43v4.97c-1.45-.25-3-1.02-3-2.4m8 0c0 1.46-1.67 2.16-3 2.4v-4.8c1.33.24 3 .94 3 2.4m-8-7c0-1.46 1.67-2.16 3-2.4v4.8c-1.37-.25-3-1-3-2.4" />
+                </svg>
+                <p>Price Range <br> $1,000 - $5,000</p>
             </div>
+
             <div>
-                <button class="Search"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z" />
-</svg>
-Search </button>
+                <button class="Search"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z" />
+                    </svg>
+                    Search 
+                </button>
             </div>
         </div>
     </div>
-    
 
-    <!-- // =================== Three cards ======================== // -->
-
+    <!-- ================= FEATURE CARDS ================= -->
     <div class="cards-main">
-
         <div class="card1">
             <span>
-                <svg class=" card1-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
-	<path d="M0 0h32v32H0z" fill="none" />
-	<path fill="currentColor" d="M16.612 2.214a1.01 1.01 0 0 0-1.242 0L1 13.419l1.243 1.572L4 13.621V26a2.004 2.004 0 0 0 2 2h20a2.004 2.004 0 0 0 2-2V13.63L29.757 15L31 13.428ZM18 26h-4v-8h4Zm2 0v-8a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v8H6V12.062l10-7.79l10 7.8V26Z" />
-</svg>
-
+                <svg class="card1-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32">
+                    <path d="M0 0h32v32H0z" fill="none" />
+                    <path fill="currentColor" d="M16.612 2.214a1.01 1.01 0 0 0-1.242 0L1 13.419l1.243 1.572L4 13.621V26a2.004 2.004 0 0 0 2 2h20a2.004 2.004 0 0 0 2-2V13.63L29.757 15L31 13.428ZM18 26h-4v-8h4Zm2 0v-8a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v8H6V12.062l10-7.79l10 7.8V26Z" />
+                </svg>
             </span>
-            <p class="card1-p">Verified Properties <br> <span>All properties are verified
-for your peace of mind.</span></p>
-
+            <p class="card1-p">Verified Properties <br> <span>All properties are verified for your peace of mind.</span></p>
         </div>
 
         <div class="card1">
             <span>
                 <svg class="card1-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 9l-4 4l-2-2m11-.835c0 6.568-4.968 9.513-7.074 10.466l-.003.002c-.221.1-.332.15-.584.193c-.16.028-.518.028-.677 0a2 2 0 0 1-.588-.195C8.968 19.678 4 16.733 4 10.165V6.2c0-1.12 0-1.68.218-2.108c.192-.377.497-.682.874-.874C5.52 3 6.08 3 7.2 3h9.6c1.12 0 1.68 0 2.107.218c.377.192.683.497.875.874c.218.427.218.987.218 2.105z" />
-</svg>
-
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 9l-4 4l-2-2m11-.835c0 6.568-4.968 9.513-7.074 10.466l-.003.002c-.221.1-.332.15-.584.193c-.16.028-.518.028-.677 0a2 2 0 0 1-.588-.195C8.968 19.678 4 16.733 4 10.165V6.2c0-1.12 0-1.68.218-2.108c.192-.377.497-.682.874-.874C5.52 3 6.08 3 7.2 3h9.6c1.12 0 1.68 0 2.107.218c.377.192.683.497.875.874c.218.427.218.987.218 2.105z" />
+                </svg>
             </span>
-
-            <p class="card1-p">Safe & Secure <br> <span>Your safety is our prionty
-n every transaction </span></p>
-
-
+            <p class="card1-p">Safe & Secure <br> <span>Your safety is our priority in every transaction.</span></p>
         </div>
 
-
-
-         <div class="card1">
-
+        <div class="card1">
             <span>
                 <svg class="card1-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="currentColor" d="M12 2C6.49 2 2 6.49 2 12v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1H4.07C4.56 7.06 7.93 4 12 4s7.44 3.06 7.93 7H18c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h2v1c0 .55-.45 1-1 1h-4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h9c1.65 0 3-1.35 3-3v-7c0-5.51-4.49-10-10-10" />
-</svg></span>
-<p class="card1-p">
-    24/7 Support  <br> <span> Our toam is here to help you anytime, anywhore.
-        </span>
-</p>
-
-
-
-
- 
-
-    </div>
-
-
-           <div class="card1">
-        
-<span>
-    <svg class="card1-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="currentColor" d="m17 1.208l1.32 2.473L20.792 5L18.32 6.319L17 8.792l-1.318-2.473l-2.473-1.32l2.473-1.318zm-6.333 8.125l5 2.667l-5 2.667l-2.666 5l-2.667-5l-5-2.667l5-2.667l2.667-5zm.75 2.667L9.19 10.812L8.001 8.583l-1.189 2.229L4.584 12l2.228 1.188l1.189 2.229l1.188-2.229zm8.25 4.333l-1.666-3.125l-1.667 3.125L13.209 18l3.125 1.667l1.667 3.125l1.666-3.125L22.792 18z" />
-</svg>
-
-</span>
-
-
-<p class="card1-p">Best Price<br> <span>Get the best deals
-at the best prices.</span></p>
-        </div>
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor" d="M12 2C6.49 2 2 6.49 2 12v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5c0-.55-.45-1-1-1H4.07C4.56 7.06 7.93 4 12 4s7.44 3.06 7.93 7H18c-.55 0-1 .45-1 1v5c0 .55.45 1 1 1h2v1c0 .55-.45 1-1 1h-4c0-.55-.45-1-1-1h-4c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1h9c1.65 0 3-1.35 3-3v-7c0-5.51-4.49-10-10-10" />
+                </svg>
+            </span>
+            <p class="card1-p">24/7 Support <br> <span>Our team is here to help you anytime, anywhere.</span></p>
         </div>
 
+        <div class="card1">
+            <span>
+                <svg class="card1-icon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path fill="currentColor" d="m17 1.208l1.32 2.473L20.792 5L18.32 6.319L17 8.792l-1.318-2.473l-2.473-1.32l2.473-1.318zm-6.333 8.125l5 2.667l-5 2.667l-2.666 5l-2.667-5l-5-2.667l5-2.667l2.667-5zm.75 2.667L9.19 10.812L8.001 8.583l-1.189 2.229L4.584 12l2.228 1.188l1.189 2.229l1.188-2.229zm8.25 4.333l-1.666-3.125l-1.667 3.125L13.209 18l3.125 1.667l1.667 3.125l1.666-3.125L22.792 18z" />
+                </svg>
+            </span>
+            <p class="card1-p">Best Price <br> <span>Get the best deals at the best prices.</span></p>
+        </div>
+    </div>
 
-<!-- WHY CHOOSE NESTORIA SECTION -->
+    <!-- ================= WHY CHOOSE NESTORIA ================= -->
+    <section class="why-choose-section">
+        <div class="why-left">
+            <span class="why-label">WHY CHOOSE NESTORIA</span>
+            <h2>More Than Just<br>A Property</h2>
+            <p class="why-description">
+                We offer more than just spaces. We deliver experiences that fit your life and future.
+            </p>
 
-<section class="why-choose-section">
-
-    <!-- LEFT CONTENT -->
-    <div class="why-left">
-
-        <span class="why-label">
-            WHY CHOOSE NESTORIA
-        </span>
-
-        <h2>
-            More Than Just<br>
-            A Property
-        </h2>
-
-        <p class="why-description">
-            We offer more than just spaces. We deliver
-            experiences that fit your life and future.
-        </p>
-
-        <!-- FEATURES LIST -->
-        <div class="features-list">
-
-            <div class="feature-item">
-                <span class="check-icon">
-                    <i class="fa-solid fa-check"></i>
-                </span>
-                <p>Wide range of premium rental options</p>
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>Wide range of premium rental options</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>Flexible rent terms &amp; easy agreements</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>Personalized recommendations</p>
+                </div>
+                <div class="feature-item">
+                    <span class="check-icon"><i class="fa-solid fa-check"></i></span>
+                    <p>Trusted by thousands of happy clients</p>
+                </div>
             </div>
 
-            <div class="feature-item">
-                <span class="check-icon">
-                    <i class="fa-solid fa-check"></i>
-                </span>
-                <p>Flexible rent terms &amp; easy agreements</p>
-            </div>
-
-            <div class="feature-item">
-                <span class="check-icon">
-                    <i class="fa-solid fa-check"></i>
-                </span>
-                <p>Personalized recommendations</p>
-            </div>
-
-            <div class="feature-item">
-                <span class="check-icon">
-                    <i class="fa-solid fa-check"></i>
-                </span>
-                <p>Trusted by thousands of happy clients</p>
-            </div>
-
+            <a href="#about" class="learn-more-btn">
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
 
-        <!-- LEARN MORE BUTTON -->
-        <a href="#about" class="learn-more-btn">
-            Learn More
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        <div class="why-right">
+            <img src="/Images/0583e6a2f7bc4d0a829714ee4430fbf9.png" alt="Luxury modern living room">
+        </div>
+    </section>
 
-    </div>
-
-
-    <!-- RIGHT IMAGE -->
-    <div class="why-right">
-
-        <img
-            src="/Images/0583e6a2f7bc4d0a829714ee4430fbf9.png"
-            alt="Luxury modern living room"
-        >
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================
-     FEATURED PROPERTIES SECTION
-===================================== -->
-
-<section class="featured-properties-section" id="listings">
-
-    <!-- SECTION HEADER -->
-    <div class="featured-header">
-
-        <h2>Featured Properties</h2>
-
-        <a href="#listings" class="view-all-link">
-            View All Properties
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-    </div>
-
-
-    <!-- PROPERTY GRID -->
-    <div class="properties-grid">
-
-
-        <!-- PROPERTY CARD 1 -->
-        <div class="property-card">
-
-            <div class="property-image">
-
-                <img
-                    src="/Images/1.jpg"
-                    alt="Modern Ocean Villa"
-                >
-
-                <span class="property-badge featured-badge">
-                    Featured
-                </span>
-
-                <button class="favorite-btn" aria-label="Add to favorites">
-                    <i class="fa-regular fa-heart"></i>
-                </button>
-
-            </div>
-
-
-            <div class="property-content">
-
-                <h3>Modern Ocean Villa</h3>
-
-                <div class="property-location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Miami, Florida</span>
-                </div>
-
-
-                <div class="property-features">
-
-                    <div>
-                        <i class="fa-solid fa-bed"></i>
-                        <span>5 Beds</span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-bath"></i>
-                        <span>4 Baths</span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-ruler-combined"></i>
-                        <span>4,200 sqft</span>
-                    </div>
-
-                </div>
-
-
-                <div class="property-bottom">
-
-                    <div class="property-price">
-                        <strong>$4,200</strong>
-                        <span>/ month</span>
-                    </div>
-
-                    <a href="#property-1" class="property-btn">
-                        View Details
-                    </a>
-
-                </div>
-
-            </div>
-
+    <!-- ================= FEATURED PROPERTIES ================= -->
+    <section class="featured-properties-section" id="listings">
+        <div class="featured-header">
+            <h2>Featured Properties</h2>
+            <a href="#listings" class="view-all-link">
+                View All Properties <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
 
-
-
-        <!-- PROPERTY CARD 2 -->
-        <div class="property-card">
-
-            <div class="property-image">
-
-                <img
-                    src="/Images/2.jpg"
-                    alt="Urban Luxury Apartment"
-                >
-
-                <span class="property-badge new-badge">
-                    New
-                </span>
-
-                <button class="favorite-btn" aria-label="Add to favorites">
-                    <i class="fa-regular fa-heart"></i>
-                </button>
-
+        <div class="properties-grid">
+            <!-- PROPERTY CARD 1 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="/Images/1.jpg" alt="Modern Ocean Villa">
+                    <span class="property-badge featured-badge">Featured</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-content">
+                    <h3>Modern Ocean Villa</h3>
+                    <div class="property-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Miami, Florida</span>
+                    </div>
+                    <div class="property-features">
+                        <div><i class="fa-solid fa-bed"></i> <span>5 Beds</span></div>
+                        <div><i class="fa-solid fa-bath"></i> <span>4 Baths</span></div>
+                        <div><i class="fa-solid fa-ruler-combined"></i> <span>4,200 sqft</span></div>
+                    </div>
+                    <div class="property-bottom">
+                        <div class="property-price">
+                            <strong>$4,200</strong> <span>/ month</span>
+                        </div>
+                        <a href="#property-1" class="property-btn">View Details</a>
+                    </div>
+                </div>
             </div>
 
-
-            <div class="property-content">
-
-                <h3>Urban Luxury Apartment</h3>
-
-                <div class="property-location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Chicago, Illinois</span>
+            <!-- PROPERTY CARD 2 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="/Images/2.jpg" alt="Urban Luxury Apartment">
+                    <span class="property-badge new-badge">New</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
                 </div>
-
-
-                <div class="property-features">
-
-                    <div>
-                        <i class="fa-solid fa-bed"></i>
-                        <span>3 Beds</span>
+                <div class="property-content">
+                    <h3>Urban Luxury Apartment</h3>
+                    <div class="property-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Chicago, Illinois</span>
                     </div>
-
-                    <div>
-                        <i class="fa-solid fa-bath"></i>
-                        <span>2 Baths</span>
+                    <div class="property-features">
+                        <div><i class="fa-solid fa-bed"></i> <span>3 Beds</span></div>
+                        <div><i class="fa-solid fa-bath"></i> <span>2 Baths</span></div>
+                        <div><i class="fa-solid fa-ruler-combined"></i> <span>2,100 sqft</span></div>
                     </div>
-
-                    <div>
-                        <i class="fa-solid fa-ruler-combined"></i>
-                        <span>2,100 sqft</span>
+                    <div class="property-bottom">
+                        <div class="property-price">
+                            <strong>$2,850</strong> <span>/ month</span>
+                        </div>
+                        <a href="#property-2" class="property-btn">View Details</a>
                     </div>
-
                 </div>
-
-
-                <div class="property-bottom">
-
-                    <div class="property-price">
-                        <strong>$2,850</strong>
-                        <span>/ month</span>
-                    </div>
-
-                    <a href="#property-2" class="property-btn">
-                        View Details
-                    </a>
-
-                </div>
-
             </div>
 
+            <!-- PROPERTY CARD 3 -->
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="/Images/3.jpg" alt="Sunny Autumn House">
+                    <span class="property-badge hot-badge">Hot Deal</span>
+                    <button class="favorite-btn" aria-label="Add to favorites">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+                <div class="property-content">
+                    <h3>Sunny Autumn House</h3>
+                    <div class="property-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Austin, Texas</span>
+                    </div>
+                    <div class="property-features">
+                        <div><i class="fa-solid fa-bed"></i> <span>4 Beds</span></div>
+                        <div><i class="fa-solid fa-bath"></i> <span>3 Baths</span></div>
+                        <div><i class="fa-solid fa-ruler-combined"></i> <span>3,600 sqft</span></div>
+                    </div>
+                    <div class="property-bottom">
+                        <div class="property-price">
+                            <strong>$3,100</strong> <span>/ month</span>
+                        </div>
+                        <a href="#property-3" class="property-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HOW IT WORKS & TESTIMONIALS ================= -->
+    <section class="how-it-works-section">
+        <div class="section-heading">
+            <span class="section-label">HOW IT WORKS</span>
+            <h2>Find Your Dream Home in 3 Easy Steps</h2>
         </div>
 
-
-
-        <!-- PROPERTY CARD 3 -->
-        <div class="property-card">
-
-            <div class="property-image">
-
-                <img
-                    src="/Images/3.jpg"
-                    alt="Sunny Autumn House"
-                >
-
-                <span class="property-badge hot-badge">
-                    Hot Deal
-                </span>
-
-                <button class="favorite-btn" aria-label="Add to favorites">
-                    <i class="fa-regular fa-heart"></i>
-                </button>
-
+        <div class="steps-container">
+            <!-- STEP 1 -->
+            <div class="step-card">
+                <div class="step-icon step-icon-purple">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="step-content">
+                    <span class="step-number">01</span>
+                    <h3>Search &amp; Explore</h3>
+                    <p>Browse thousands of verified listings in your desired location.</p>
+                </div>
             </div>
 
-
-            <div class="property-content">
-
-                <h3>Sunny Autumn House</h3>
-
-                <div class="property-location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Austin, Texas</span>
+            <!-- STEP 2 -->
+            <div class="step-card">
+                <div class="step-icon step-icon-blue">
+                    <i class="fa-solid fa-house"></i>
                 </div>
-
-
-                <div class="property-features">
-
-                    <div>
-                        <i class="fa-solid fa-bed"></i>
-                        <span>4 Beds</span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-bath"></i>
-                        <span>3 Baths</span>
-                    </div>
-
-                    <div>
-                        <i class="fa-solid fa-ruler-combined"></i>
-                        <span>3,600 sqft</span>
-                    </div>
-
+                <div class="step-content">
+                    <span class="step-number">02</span>
+                    <h3>Choose Your Property</h3>
+                    <p>Compare options and find the perfect space for your lifestyle.</p>
                 </div>
-
-
-                <div class="property-bottom">
-
-                    <div class="property-price">
-                        <strong>$3,100</strong>
-                        <span>/ month</span>
-                    </div>
-
-                    <a href="#property-3" class="property-btn">
-                        View Details
-                    </a>
-
-                </div>
-
             </div>
 
+            <!-- STEP 3 -->
+            <div class="step-card">
+                <div class="step-icon step-icon-purple">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="step-content">
+                    <span class="step-number">03</span>
+                    <h3>Move In &amp; Enjoy</h3>
+                    <p>Complete the process and start your new journey with confidence.</p>
+                </div>
+            </div>
         </div>
 
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================
-     HOW IT WORKS SECTION
-===================================== -->
-
-<section class="how-it-works-section">
-
-    <div class="section-heading">
-
-        <span class="section-label">HOW IT WORKS</span>
-
-        <h2>Find Your Dream Home in 3 Easy Steps</h2>
-
-    </div>
-
-
-    <!-- THREE STEPS -->
-
-    <div class="steps-container">
-
-
-        <!-- STEP 1 -->
-
-        <div class="step-card">
-
-            <div class="step-icon step-icon-purple">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-
-            <div class="step-content">
-
-                <span class="step-number">01</span>
-
-                <h3>Search &amp; Explore</h3>
-
-                <p>
-                    Browse thousands of verified listings in your desired location.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- STEP 2 -->
-
-        <div class="step-card">
-
-            <div class="step-icon step-icon-blue">
-                <i class="fa-solid fa-house"></i>
-            </div>
-
-            <div class="step-content">
-
-                <span class="step-number">02</span>
-
-                <h3>Choose Your Property</h3>
-
-                <p>
-                    Compare options and find the perfect space for your lifestyle.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- STEP 3 -->
-
-        <div class="step-card">
-
-            <div class="step-icon step-icon-purple">
-                <i class="fa-solid fa-key"></i>
-            </div>
-
-            <div class="step-content">
-
-                <span class="step-number">03</span>
-
-                <h3>Move In &amp; Enjoy</h3>
-
-                <p>
-                    Complete the process and start your new journey with confidence.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- =====================================
-         TESTIMONIALS SECTION
-    ===================================== -->
-
-    <div class="testimonials-section">
-
-        <h2 class="testimonials-heading">
-            What Our Clients Say
-        </h2>
-
-
-        <div class="testimonials-grid">
-
-
-            <!-- TESTIMONIAL 1 -->
-
-            <div class="testimonial-card">
-
-                <div class="client-image">
-                    <img src="/1213.png"
-                         alt="Sarah Johnson">
-                </div>
-
-                <div class="testimonial-content">
-
-                    <h3>Sarah Johnson</h3>
-
-                    <div class="client-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+        <!-- TESTIMONIALS -->
+        <div class="testimonials-section">
+            <h2 class="testimonials-heading">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <!-- TESTIMONIAL 1 -->
+                <div class="testimonial-card">
+                    <div class="client-image">
+                        <img src="/1213.png" alt="Sarah Johnson">
                     </div>
-
-                    <p>
-                        "Nestoria made finding our dream home so easy.
-                        The process was smooth and fully professional."
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- TESTIMONIAL 2 -->
-
-            <div class="testimonial-card">
-
-                <div class="client-image">
-                    <img src="/Images/testimonial2.png"
-                         alt="David Miller">
-                </div>
-
-                <div class="testimonial-content">
-
-                    <h3>David Miller</h3>
-
-                    <div class="client-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <div class="testimonial-content">
+                        <h3>Sarah Johnson</h3>
+                        <div class="client-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Nestoria made finding our dream home so easy. The process was smooth and fully professional."</p>
                     </div>
-
-                    <p>
-                        "Amazing service and verified listings.
-                        I got the perfect apartment in just a few days!"
-                    </p>
-
                 </div>
 
-            </div>
-
-
-            <!-- TESTIMONIAL 3 -->
-
-            <div class="testimonial-card">
-
-                <div class="client-image">
-                    <img src="/Images/image.png"
-                         alt="Emily Carter">
-                </div>
-
-                <div class="testimonial-content">
-
-                    <h3>Emily Carter</h3>
-
-                    <div class="client-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <!-- TESTIMONIAL 2 -->
+                <div class="testimonial-card">
+                    <div class="client-image">
+                        <img src="/Images/testimonial2.png" alt="David Miller">
                     </div>
-
-                    <p>
-                        "A trusted platform with real value.
-                        Highly recommended for anyone looking for a new home."
-                    </p>
-
+                    <div class="testimonial-content">
+                        <h3>David Miller</h3>
+                        <div class="client-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"Amazing service and verified listings. I got the perfect apartment in just a few days!"</p>
+                    </div>
                 </div>
 
+                <!-- TESTIMONIAL 3 -->
+                <div class="testimonial-card">
+                    <div class="client-image">
+                        <img src="/Images/image.png" alt="Emily Carter">
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Emily Carter</h3>
+                        <div class="client-stars">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>"A trusted platform with real value. Highly recommended for anyone looking for a new home."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CTA BANNER ================= -->
+    <section class="cta-banner">
+        <div class="cta-icon">
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="cta-content">
+            <h2>Ready to Find Your Dream Home?</h2>
+            <p>Join thousands of happy families who found their perfect space with Nestoria.</p>
+        </div>
+        <div class="cta-button-wrapper">
+            <a href="#listings" class="get-started-btn">
+                Get Started <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & Newsletter -->
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span>Nestoria</span>
+                </a>
+                <p class="footer-desc">Discover spaces that feel like home. We connect you with premium properties tailored to your lifestyle and budget.</p>
+                
+                <div class="newsletter">
+                    <p>Subscribe for new listings</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault();">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
             </div>
 
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Property Listings</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog & News</a></li>
+                </ul>
+            </div>
 
+            <!-- Column 3: Support -->
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center / FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-info">
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                                <path d="M0 0h48v48H0z" fill="none" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 4.5A14.82 14.82 0 0 0 9.18 19.32v1.08c.6 8.12 7.34 14.65 14.82 23.1c7.81-8.82 14.82-15.5 14.82-24.18A14.82 14.82 0 0 0 24 4.5m0 7.7a7.13 7.13 0 1 1-7.13 7.12A7.13 7.13 0 0 1 24 12.2" />
+                            </svg>
+                        </span> 
+                        123 Real Estate Blvd,<br>New York, NY 10001
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
+                                <path d="M0 0h48v48H0z" fill="none" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m12.852 21.473l2.859-2.858c1.03-1.031 2.316-2.336 2.187-3.788l-.486-5.488c-.16-1.802-2.03-3.839-3.84-3.839H8.866c-1.843 0-3.581 1.554-3.344 4.31c.155 1.812-.84 11.764 10.032 22.636s20.824 9.877 22.636 10.032c2.756.237 4.31-1.501 4.31-3.344v-4.706c0-1.81-2.037-3.68-3.84-3.84l-5.487-.486c-1.452-.129-2.757 1.156-3.788 2.187l-2.858 2.859c-2.54-1.36-5.208-3.238-7.822-5.853c-2.615-2.614-4.494-5.281-5.853-7.822" />
+                            </svg>
+                        </span> 
+                        +1 (555) 123-4567
+                    </li>
+                    <li>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path fill="currentColor" d="M21.55 8.17L19 6.47V5.01c0-.55-.45-1-1-1h-2.7l-2.75-1.83c-.34-.22-.77-.22-1.11 0L8.69 4.01h-2.7c-.55 0-1 .45-1 1v1.46l-2.55 1.7c-.28.19-.45.5-.45.83v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-.33-.17-.65-.45-.83ZM7 6h10v4.46l-5 3.33l-5-3.33zM4 20v-9.13l1.45.96l6 4c.17.11.36.17.55.17s.39-.06.55-.17l6-4l1.45-.96V20z" />
+                            </svg>
+                        </span> 
+                        hello@nestoria.com
+                    </li>
+                </ul>
+                
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
         </div>
 
-    </div>
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nestoria. All rights reserved.</p>
+            <p>Made with ♥ for your dream home.</p>
+        </div>
 
-</section>
+        <!-- Huge Branding Text -->
+        <div class="footer-branding-wrapper">
+            <h6 class="footer-branding">NESTORIA</h6>
+        </div>
+    </footer>
 
+</div>
 
-
-
-
-<!-- =====================================
-     CTA BANNER SECTION
-===================================== -->
-
-<section class="cta-banner">
-
-    <!-- LEFT ICON -->
-    <div class="cta-icon">
-        <i class="fa-solid fa-house"></i>
-    </div>
-
-
-    <!-- CENTER CONTENT -->
-    <div class="cta-content">
-
-        <h2>Ready to Find Your Dream Home?</h2>
-
-        <p>
-            Join thousands of happy families who found
-            their perfect space with Nestoria.
-        </p>
-
-    </div>
-
-
-    <!-- RIGHT BUTTON -->
-    <div class="cta-button-wrapper">
-
-        <a href="#listings" class="get-started-btn">
-            Get Started
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-<!-- =========================================
-     NESTORIA FOOTER START
-     ========================================= -->
-<footer class="site-footer">
-  <div class="footer-container">
-    
-    <!-- Column 1: Brand & Newsletter -->
-    <div class="footer-col brand-col">
-      <a href="#" class="footer-logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-          <polyline points="9 22 9 12 15 12 15 22"></polyline>
-        </svg>
-        <span>Nestoria</span>
-      </a>
-      <p class="footer-desc">Discover spaces that feel like home. We connect you with premium properties tailored to your lifestyle and budget.</p>
-      
-      <div class="newsletter">
-        <p>Subscribe for new listings</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault();">
-          <input type="email" placeholder="Your email address" required>
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-
-    <!-- Column 2: Quick Links -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Property Listings</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Blog & News</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 3: Support -->
-    <div class="footer-col">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="#">Help Center / FAQ</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Cookie Policy</a></li>
-        <li><a href="#">Sitemap</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 4: Contact Info -->
-    <div class="footer-col">
-      <h4>Contact Us</h4>
-      <ul class="contact-info">
-        <li><span> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
-	<path d="M0 0h48v48H0z" fill="none" />
-	<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 4.5A14.82 14.82 0 0 0 9.18 19.32v1.08c.6 8.12 7.34 14.65 14.82 23.1c7.81-8.82 14.82-15.5 14.82-24.18A14.82 14.82 0 0 0 24 4.5m0 7.7a7.13 7.13 0 1 1-7.13 7.12A7.13 7.13 0 0 1 24 12.2" />
-</svg>
-
-        </span> 123 Real Estate Blvd,<br>New York, NY 10001</li>
-        <li><span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48">
-	<path d="M0 0h48v48H0z" fill="none" />
-	<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m12.852 21.473l2.859-2.858c1.03-1.031 2.316-2.336 2.187-3.788l-.486-5.488c-.16-1.802-2.03-3.839-3.84-3.839H8.866c-1.843 0-3.581 1.554-3.344 4.31c.155 1.812-.84 11.764 10.032 22.636s20.824 9.877 22.636 10.032c2.756.237 4.31-1.501 4.31-3.344v-4.706c0-1.81-2.037-3.68-3.84-3.84l-5.487-.486c-1.452-.129-2.757 1.156-3.788 2.187l-2.858 2.859c-2.54-1.36-5.208-3.238-7.822-5.853c-2.615-2.614-4.494-5.281-5.853-7.822" />
-</svg>
-
-        </span> +1 (555) 123-4567</li>
-        <li><span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-	<path d="M0 0h24v24H0z" fill="none" />
-	<path fill="currentColor" d="M21.55 8.17L19 6.47V5.01c0-.55-.45-1-1-1h-2.7l-2.75-1.83c-.34-.22-.77-.22-1.11 0L8.69 4.01h-2.7c-.55 0-1 .45-1 1v1.46l-2.55 1.7c-.28.19-.45.5-.45.83v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-.33-.17-.65-.45-.83ZM7 6h10v4.46l-5 3.33l-5-3.33zM4 20v-9.13l1.45.96l6 4c.17.11.36.17.55.17s.39-.06.55-.17l6-4l1.45-.96V20z" />
-</svg>
-
-        </span> hello@nestoria.com</li>
-      </ul>
-      
-      <div class="social-links">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="Twitter">X</a>
-        <a href="#" aria-label="LinkedIn">IN</a>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
-    <p>&copy; 2024 Nestoria. All rights reserved.</p>
-    <p>Made with ♥ for your dream home.</p>
-  </div>
-
-  <!-- HUGE BRANDING TEXT (Aapka Snippet) -->
-  <div class="footer-branding-wrapper">
-    <h6 class="footer-branding">NESTORIA</h6>
-  </div>
-
-</footer>
-<!-- =========================================
-     NESTORIA FOOTER END
-     ========================================= -->
-
-
-
-
-
-
-
-
-
-
+<!-- ================= SCRIPTS ================= -->
+<!-- GSAP Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js"></script>
+<!-- GSAP ScrollTrigger (Added for scroll animations) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/ScrollTrigger.min.js"></script>
+<!-- Custom JS -->
+<script src="function.js"></script>
 
-    <script src="function.js"></script>
 </body>
 </html>
