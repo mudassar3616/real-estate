@@ -1,0 +1,812 @@
+/* =====================================
+   NESTORIA ABOUT PAGE
+   Additive page styles — keeps global typography and shared header/footer untouched.
+===================================== */
+
+#about-page {
+    width: 100%;
+    color: var(--dark-purple, #141136);
+}
+
+/* HERO */
+.about-hero {
+    width: 100%;
+    min-height: 540px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 55px 6%;
+    overflow: hidden;
+    isolation: isolate;
+    border-radius: 25px;
+    background-image: url("../Images/Luxury Coastal Villa at Sunset.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(230, 239, 255, 0.96) 0%, rgba(230, 239, 255, 0.86) 38%, rgba(230, 239, 255, 0.12) 76%, rgba(20, 17, 54, 0.08) 100%);
+}
+
+.about-hero-content {
+    width: min(590px, 62%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 17px 9px 10px;
+    border: 1px solid rgba(111, 66, 232, 0.12);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.62);
+    color: var(--accent-purple, #6f42e8);
+    font-size: 13px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+}
+
+.about-eyebrow-icon {
+    width: 29px;
+    height: 29px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eee9ff;
+    font-size: 18px;
+}
+
+.about-hero h1 {
+    margin: 0;
+    color: var(--dark-purple, #141136);
+    font-size: clamp(2.7rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.about-hero h1 span {
+    color: var(--accent-purple, #6f42e8);
+}
+
+.about-hero-content > p {
+    max-width: 490px;
+    margin: 0;
+    color: #29263d;
+    font-size: 17px;
+    line-height: 1.65;
+}
+
+.about-primary-btn,
+.about-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 14px 23px;
+    border-radius: 11px;
+    background: var(--primary-purple, #241c6c);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(36, 28, 108, 0.16);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.about-primary-btn:hover,
+.about-secondary-btn:hover {
+    background: var(--accent-purple, #6f42e8);
+    transform: translateY(-3px);
+}
+
+.about-primary-btn span,
+.about-secondary-btn span,
+.about-cta-btn span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.about-hero-note {
+    position: absolute;
+    right: 5%;
+    top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 18px 12px 12px;
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 50px;
+    background: rgba(255,255,255,.78);
+    box-shadow: 0 8px 25px rgba(36,28,108,.10);
+    backdrop-filter: blur(12px);
+}
+
+.about-note-icon {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #f0eaff;
+    color: var(--accent-purple, #6f42e8);
+    font-size: 20px;
+}
+
+.about-hero-note strong,
+.about-hero-note small {
+    display: block;
+}
+
+.about-hero-note strong {
+    color: var(--dark-purple, #141136);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.about-hero-note small {
+    margin-top: 3px;
+    color: #777681;
+    font-size: 10px;
+}
+
+/* HIGHLIGHT CARDS */
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin: 24px 0 35px;
+}
+
+.about-highlight-card {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 17px 14px;
+    border: 1px solid #efedf7;
+    border-radius: 17px;
+    background: #fff;
+    box-shadow: 0 5px 22px rgba(36, 28, 108, .055);
+}
+
+.about-highlight-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
+    background: #f0edff;
+    color: var(--accent-purple, #6f42e8);
+    font-size: 24px;
+}
+
+.about-highlight-card strong {
+    display: block;
+    color: #17152f;
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.about-highlight-card p {
+    margin: 5px 0 0;
+    color: #777681;
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+/* INTRO SPLIT SECTION */
+.about-intro {
+    display: grid;
+    grid-template-columns: .88fr 1.12fr;
+    align-items: center;
+    gap: 50px;
+    padding: 25px 20px 45px;
+}
+
+.about-intro-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.about-section-label {
+    display: block;
+    color: #7562b9;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-intro-copy h2,
+.about-purpose-heading h2 {
+    margin: 0;
+    color: #17152f;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: -1px;
+}
+
+.about-intro-copy p {
+    max-width: 490px;
+    margin: 0;
+    color: #55535f;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.about-secondary-btn {
+    margin-top: 7px;
+}
+
+.about-intro-image {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 28px rgba(36, 28, 108, .09);
+}
+
+.about-intro-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .5s ease;
+}
+
+.about-intro-image:hover img {
+    transform: scale(1.035);
+}
+
+.about-image-caption {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 13px 17px;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 12px;
+    background: rgba(255,255,255,.84);
+    backdrop-filter: blur(10px);
+}
+
+.about-image-caption strong {
+    color: #17152f;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.about-image-caption span {
+    color: #777681;
+    font-size: 11px;
+}
+
+/* PURPOSE */
+.about-purpose,
+.about-values,
+.about-journey {
+    padding: 38px 15px;
+}
+
+.about-purpose-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-purpose-heading h2 {
+    font-size: 30px;
+}
+
+.about-purpose-heading p {
+    margin: 0;
+    color: #777681;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.about-purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.about-purpose-card {
+    position: relative;
+    min-height: 230px;
+    padding: 30px;
+    overflow: hidden;
+    border: 1px solid #eae9f1;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(36, 28, 108, .045);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.about-purpose-card:hover,
+.about-value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 25px rgba(36, 28, 108, .09);
+}
+
+.about-purpose-number {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    color: #eeebf8;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.about-purpose-symbol {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 17px;
+    border-radius: 16px;
+    background: #f0edff;
+    color: var(--accent-purple, #6f42e8);
+    font-size: 27px;
+}
+
+.about-purpose-card h3,
+.about-value-card h3,
+.about-journey-card h3 {
+    margin: 0 0 9px;
+    color: #17152f;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.about-purpose-card p,
+.about-value-card p,
+.about-journey-card p {
+    margin: 0;
+    color: #777681;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+/* VALUES */
+.about-values {
+    padding-top: 25px;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.about-value-card {
+    min-height: 210px;
+    padding: 25px 22px;
+    border: 1px solid #eae9f1;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(36, 28, 108, .04);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.about-value-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 17px;
+    border-radius: 15px;
+    background: #f0edff;
+    color: var(--accent-purple, #6f42e8);
+    font-size: 24px;
+}
+
+/* JOURNEY */
+.about-journey {
+    padding-top: 30px;
+}
+
+.about-journey-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.about-journey-card {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    min-height: 145px;
+    padding: 20px;
+    border: 1px solid #eae9f1;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(36, 28, 108, .04);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.about-journey-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(36, 28, 108, .09);
+}
+
+.about-journey-icon {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9270f7, #4d26d9);
+    color: #fff;
+    font-size: 27px;
+    box-shadow: 0 7px 18px rgba(111, 66, 232, .2), 0 0 0 8px rgba(111, 66, 232, .06);
+}
+
+.about-step-no {
+    display: block;
+    margin-bottom: 4px;
+    color: #7562b9;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.about-journey-card h3 {
+    font-size: 14px;
+}
+
+.about-journey-card p {
+    font-size: 11px;
+}
+
+/* CTA */
+.about-cta {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    min-height: 175px;
+    margin: 25px 0 35px;
+    padding: 28px 45px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: linear-gradient(100deg, rgba(36, 28, 108, .98), rgba(91, 57, 178, .86)), url("../Images/Luxury Coastal Villa at Sunset.png") center 55%/cover no-repeat;
+    box-shadow: 0 6px 20px rgba(36, 28, 108, .1);
+}
+
+.about-cta-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 50%;
+    background: rgba(255,255,255,.13);
+    color: #fff;
+    font-size: 27px;
+}
+
+.about-cta-copy {
+    flex: 1;
+}
+
+.about-cta-copy h2 {
+    margin: 0 0 7px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.about-cta-copy p {
+    margin: 0;
+    color: rgba(255,255,255,.88);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.about-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 22px;
+    border-radius: 10px;
+    background: #fff;
+    color: var(--dark-purple, #141136);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 13px;
+    font-weight: 650;
+    transition: transform .3s ease, background .3s ease;
+}
+
+.about-cta-btn:hover {
+    transform: translateY(-3px);
+    background: #eee9ff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .about-hero {
+        min-height: 500px;
+        padding: 45px;
+    }
+
+    .about-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-intro {
+        gap: 30px;
+    }
+
+    .about-intro-image {
+        height: 350px;
+    }
+
+    .about-journey-grid {
+        gap: 14px;
+    }
+
+    .about-journey-card {
+        padding: 16px;
+        gap: 13px;
+    }
+
+    .about-journey-icon {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: 500px;
+        align-items: flex-end;
+        padding: 35px 25px;
+        background-position: 62% center;
+    }
+
+    .about-hero-overlay {
+        background: linear-gradient(0deg, rgba(230,239,255,.98) 0%, rgba(230,239,255,.88) 48%, rgba(230,239,255,.12) 100%);
+    }
+
+    .about-hero-content {
+        width: 100%;
+        max-width: 560px;
+        gap: 15px;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(2.25rem, 8vw, 3.2rem);
+    }
+
+    .about-hero-content > p {
+        font-size: 15px;
+    }
+
+    .about-hero-note {
+        top: 18px;
+        right: 18px;
+    }
+
+    .about-highlights {
+        gap: 12px;
+        margin: 18px 0 25px;
+    }
+
+    .about-highlight-card {
+        padding: 13px 11px;
+        gap: 10px;
+    }
+
+    .about-highlight-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 21px;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px 8px 30px;
+    }
+
+    .about-intro-copy h2 {
+        font-size: 34px;
+    }
+
+    .about-intro-image {
+        height: 340px;
+    }
+
+    .about-purpose,
+    .about-values,
+    .about-journey {
+        padding: 28px 5px;
+    }
+
+    .about-purpose-grid {
+        gap: 14px;
+    }
+
+    .about-purpose-card {
+        min-height: 220px;
+        padding: 22px;
+    }
+
+    .about-values-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .about-value-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .about-value-icon {
+        margin-bottom: 12px;
+    }
+
+    .about-journey-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .about-journey-card {
+        min-height: 120px;
+    }
+
+    .about-cta {
+        flex-wrap: wrap;
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .about-cta-copy {
+        flex-basis: calc(100% - 80px);
+    }
+
+    .about-cta-copy h2 {
+        font-size: 22px;
+    }
+
+    .about-cta-btn {
+        margin-left: 73px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        min-height: 470px;
+        padding: 25px 18px;
+        border-radius: 18px;
+    }
+
+    .about-eyebrow {
+        font-size: 11px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.15rem;
+        letter-spacing: -.8px;
+    }
+
+    .about-hero-content > p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .about-hero-note {
+        gap: 8px;
+        padding: 8px 12px 8px 8px;
+    }
+
+    .about-note-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .about-hero-note strong {
+        font-size: 10px;
+    }
+
+    .about-hero-note small {
+        font-size: 9px;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .about-highlight-card {
+        padding: 13px;
+    }
+
+    .about-intro-copy h2 {
+        font-size: 30px;
+    }
+
+    .about-intro-copy p {
+        font-size: 14px;
+    }
+
+    .about-intro-image {
+        height: 260px;
+        border-radius: 16px;
+    }
+
+    .about-purpose-heading h2 {
+        font-size: 25px;
+    }
+
+    .about-purpose-heading p {
+        font-size: 13px;
+    }
+
+    .about-purpose-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-purpose-card {
+        min-height: auto;
+    }
+
+    .about-cta {
+        display: grid;
+        grid-template-columns: 48px 1fr;
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .about-cta-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        font-size: 22px;
+    }
+
+    .about-cta-copy {
+        min-width: 0;
+    }
+
+    .about-cta-copy h2 {
+        font-size: 18px;
+    }
+
+    .about-cta-copy p {
+        font-size: 11px;
+    }
+
+    .about-cta-btn {
+        grid-column: 2;
+        justify-self: start;
+        margin-left: 0;
+        padding: 12px 17px;
+    }
+}
